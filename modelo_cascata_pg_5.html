@@ -1,0 +1,88 @@
+<!-- Declaramos o tipo de documento HTML -->
+<!DOCTYPE html>
+<!-- Definimos o idioma do conteúdo -->
+<html lang="pt-BR">
+
+<head>
+  <!-- Codificação de caracteres -->
+  <meta charset="UTF-8">
+  <!-- Permite visualização correta em diferentes dispositivos -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Título da aba -->
+  <title>Modelo Cascata - WikiDev</title>
+  <!-- Ligamos o mesmo CSS usado nas outras páginas -->
+  <link rel="stylesheet" href="css/style_modelo_cascata.css">
+</head>
+
+<body>
+  <!-- Estrutura principal que contém o menu e o conteúdo -->
+  <div class="container">
+    <!-- Menu lateral fixo -->
+    <aside class="sidebar">
+
+      <!-- Logo -->
+       
+       <div class="logo">
+        <span>
+          <img src="img/logo/branco.png" alt="Logo WikiDev">
+        </span>
+      </div>
+
+      <!-- Nome do site -->
+      <h2 class="site-title">WikiDev</h2>
+
+      <!-- Navegação lateral -->
+      <nav class="menu">
+        <!-- Links das páginas, com destaque na atual -->
+        <a href="index.html">Início</a>
+        <a href="introducao.html">Introdução</a>
+        <a href="engenharia.html" >Engenharia de Software</a>
+        <a href="crise.html">Crise do Software</a>
+        <a href="modelo-cascata.html" class="active">Modelo Cascata</a>
+        <a href="metodologias-ageis.html">Metodologias Ágeis</a>
+        <a href="scrum.html">Scrum</a>
+        <a href="requisitos.html">Requisitos</a>
+        <a href="historia-usuario.html" >História do Usuário</a>
+      </nav>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="content">
+      <!-- Título da seção -->
+      <h1 class="main-title">Modelo Cascata</h1>
+
+      <!-- Container que organiza texto e imagem -->
+      <div class="intro-container">
+        <!-- Imagem ilustrativa -->
+        <div class="illustration">
+          <!-- Ilustração SVG gratuita semelhante -->
+          <img src="img/banner/modelo_Cascata.jpg" alt="modelo_castata_img">
+        </div>
+
+        <!-- Texto explicativo -->
+        <div class="text-area">
+          <p>
+            Para resolver os problemas da Crise do Software, surgiu o <strong>Modelo Cascata,</strong> criado por Winston Royce em 1970. 
+          </p>
+          <p>
+            Ele organizou o desenvolvimento em <strong>etapas sequenciais</strong> - como requisitos , análise, design, implementação e testes.
+          </p>
+          <p>
+            Embora rígido, o modelo ajudou a trazer <strong>disciplina e documentação</strong> ao processo de criação de software.
+          </p>
+          <!-- Botão para avançar à próxima página -->
+          <button id="nextMetodologiasBtn">Próxima: Metodologias Ágeis</button>
+        </div>
+      </div>
+
+      <!-- Rodapé -->
+      <footer class="footer">
+        <p>Desenvolvido Joelson, Leandro, Alice, Carlos, Gerry, Flávia e Raquel.</p>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Ligamos o JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

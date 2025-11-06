@@ -1,0 +1,91 @@
+<!-- Declaramos o tipo de documento HTML -->
+<!DOCTYPE html>
+<!-- Definimos o idioma do conteúdo -->
+<html lang="pt-BR">
+
+<head>
+  <!-- Codificação de caracteres -->
+  <meta charset="UTF-8">
+  <!-- Permite visualização correta em diferentes dispositivos -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Título da aba -->
+  <title>Engenharia de Software - WinkiDev</title>
+  <!-- Ligamos o mesmo CSS usado nas outras páginas -->
+  <link rel="stylesheet" href="css/style_egenharia_pg_3.css">
+</head>
+
+<body>
+  <!-- Estrutura principal que contém o menu e o conteúdo -->
+  <div class="container">
+    <!-- Menu lateral fixo -->
+    <aside class="sidebar">
+
+      <!-- Logo -->
+      <div class="logo">
+        <span>
+          <img src="img/logo/branco.png" alt="Logo WikiDev">
+        </span>
+      </div>
+
+      <!-- Nome do site -->
+      <h2 class="site-title">WikiDev</h2>
+
+      <!-- Navegação lateral -->
+      <nav class="menu">
+        <!-- Links das páginas, com destaque na atual -->
+        <a href="index.html">Início</a>
+        <a href="introducao.html">Introdução</a>
+        <a href="engenharia.html" class="active">Engenharia de Software</a>
+        <a href="crise.html">Crise do Software</a>
+        <a href="modelo-cascata.html">Modelo Cascata</a>
+        <a href="metodologias-ageis.html">Metodologias Ágeis</a>
+        <a href="scrum.html">Scrum</a>
+        <a href="requisitos.html">Requisitos</a>
+        <a href="historia-usuario.html">História do Usuário</a>
+      </nav>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="content">
+      <!-- Título da seção -->
+      <h1 class="main-title">Engenharia de Software</h1>
+
+      <!-- Container que organiza texto e imagem -->
+      <div class="intro-container">
+        <!-- Imagem ilustrativa -->
+        <div class="illustration">
+          <!-- Ilustração SVG gratuita semelhante -->
+          <img src="img/banner/egenharia_De_Software.jpg" alt="Pessoa desenvolvendo software">
+        </div>
+
+        <!-- Texto explicativo -->
+        <div class="text-area">
+          <p>
+            A Engenharia de Software é uma área da Computação que surgiu da necessidade de aplicar princípios de
+            engenharia no desenvolvimento de programas de computador.
+          </p>
+          <p>
+            Seu objetivo é garantir que o software seja construído de forma organizada, confiável, eficiente e com alta
+            qualidade, respeitando prazos e requisitos definidos.
+          </p>
+          <p>
+            Essa disciplina combina conhecimentos técnicos e boas práticas de projeto para criar sistemas que atendam
+            tanto às necessidades dos usuários quanto aos padrões da indústria.
+          </p>
+
+          <!-- Botão para avançar à próxima página -->
+          <button id="nextToCriseBtn">Próxima: Crise do Software</button>
+        </div>
+      </div>
+
+      <!-- Rodapé -->
+      <footer class="footer">
+        <p>Projeto criado por Joelson, Leandro, Alice, Carlos, Flávia e Raquel.</p>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Ligamos o JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

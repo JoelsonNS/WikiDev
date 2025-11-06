@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+/* --- VARIÁVEIS GLOBAIS --- */
+:root {
+    --cor0: #fff;
+    --cor1: #000;
+    --cor1: #357ca5;
+    --cor1: #285e7a;
+}
+  
+
+
+
+/* Reset básico para remover margens e paddings padrão do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página: define a fonte e cores padrão */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  min-height: 100vh; /* altura total da tela */
+  background-color: #fff;
+  color: #000;
+}
+
+/* Container principal: junta menu lateral e conteúdo */
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* Menu lateral fixo à esquerda */
+.sidebar {
+  width: 220px;
+  background-color: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 10px;
+  position: fixed; /* Fica sempre visível */
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* Logo simples (livro) */
+.logo span {
+  font-size: 30px;
+}
+
+.logo img {
+    width: 50px;
+    max-width: 100%;
+    display: flex;
+}
+
+/* Nome do site abaixo da logo */
+.site-title {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+/* Links do menu */
+.menu {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+/* Cada link individual */
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 8px 15px;
+    transition: background 0.3s;
+}
+
+/* Efeito hover */
+.menu a:hover {
+    background-color: #333;
+}
+
+/* Link ativo */
+.menu a.active {
+    background-color: #222;
+}
+
+/* Área principal (conteúdo à direita do menu) */
+.content {
+    margin-left: 220px; /* espaço do menu lateral */
+    padding: 60px;
+    flex: 1;
+}
+
+/* Título principal */
+.main-title {
+    font-size: 40px;
+    color: #357ca5;
+    margin-bottom: 30px;
+}
+
+/* Parágrafos */
+.content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+/* Botão azul */
+button {
+    background-color:#357ca5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+/* Efeito hover no botão */
+button:hover {
+    background-color: #285e7a;
+}
+
+/* Imagem ilustrativa homem sentado 'Aqui serai o conteine da imagem */
+.illustration {
+    margin-top: 40px;
+}
+
+.illustration img {
+    width: 350px;
+    max-width: 100%;
+}
+
+/* Rodapé */
+.footer {
+    margin-top:  60px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+
+
+/* Layout da página Introdução */
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* para telas pequenas quebrar o layout */
+  gap: 40px;
+}
+
+/* Imagem ilustrativa maior */
+.intro-container .illustration img {
+  width: 400px;
+  max-width: 100%;
+  
+}
+
+/* Texto da introdução */
+.text-area {
+  max-width: 550px;
+  line-height: 1.6;
+}
+
+/* Centraliza o botão */
+.text-area button {
+  display: block;
+  margin-top: 20px;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    /* Menu lateral vira barra superior */
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    /* Ajusta o conteúdo para ocupar a tela toda */
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    /* Reduz tamanho do título */
+    .main-title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    /* Centraliza textos */
+    .content p {
+        text-align: center;
+        margin: 0 auto 20px;
+    }
+
+    /* Centraliza botão */
+    button {
+        display: block;
+        margin: 20px auto;
+    }
+
+    /* Centraliza imagem */
+    .illustration {
+        display: flex;
+        justify-content: center;
+    }
+
+}

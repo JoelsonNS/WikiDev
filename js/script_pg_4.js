@@ -3,8 +3,8 @@
 //Botão saiba mais
 const btSaibaMais = document.getElementById('nextToSaibaMais')
 
-    btSaibaMais.addEventListener('click', () => {
-        window.open('https://www.youtube.com/watch?v=mhK0nr9plIU')
+    nextToSaibaMais.addEventListener('click', () => {
+        window.open('https://www.youtube.com/watch?v=8-e6sYKAY30')
 })
 
 
@@ -19,5 +19,5 @@ const btRetornar = document.getElementById('backToEngenharia')
 const nextToModeloCascata = document.getElementById('nextToModeloCascata')
 
     nextToModeloCascata.addEventListener('click', () => {
-        window.location.href = ''
+        window.location.href = 'modelo_cascata_pg_5.html'
 })
